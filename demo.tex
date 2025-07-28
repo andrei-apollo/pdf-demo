@@ -1,0 +1,168 @@
+\documentclass[12pt]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+
+% Page geometry
+\geometry{margin=1in}
+
+% Document information
+\title{Hello World LaTeX Document}
+\author{LaTeX Demo}
+\date{\today}
+
+\begin{document}
+
+% Title page
+\maketitle
+
+% Abstract
+\begin{abstract}
+This is a simple LaTeX document demonstrating basic formatting, titles, text, and tables. It serves as a "Hello World" example for LaTeX document creation.
+\end{abstract}
+
+% Table of contents
+\tableofcontents
+\newpage
+
+% Main content
+\section{Introduction}
+
+Welcome to this LaTeX demonstration! This document showcases various LaTeX features including sections, text formatting, and tables.
+
+\subsection{What is LaTeX?}
+
+LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation. LaTeX is the de facto standard for the communication and publication of scientific documents.
+
+\subsection{Document Structure}
+
+This document is organized into several sections to demonstrate different LaTeX capabilities:
+\begin{itemize}
+    \item Text formatting and paragraphs
+    \item Mathematical expressions
+    \item Tables and data presentation
+    \item Lists and enumerations
+\end{itemize}
+
+\section{Text and Formatting}
+
+LaTeX provides excellent text formatting capabilities. You can create \textbf{bold text}, \textit{italic text}, \underline{underlined text}, and even \texttt{monospace text} for code snippets.
+
+\subsection{Paragraphs and Spacing}
+
+LaTeX automatically handles paragraph spacing and justification. When you want to start a new paragraph, simply leave a blank line in your source code.
+
+This is a new paragraph that demonstrates LaTeX's automatic text flow and justification capabilities.
+
+\section{Mathematical Expressions}
+
+LaTeX excels at typesetting mathematical content. Here are some examples:
+
+Inline math: The quadratic formula is $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$.
+
+Display math:
+\[
+E = mc^2
+\]
+
+\[
+\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
+\]
+
+\section{Tables}
+
+Tables are essential for presenting data in a structured format. Here are some examples:
+
+\subsection{Simple Table}
+
+\begin{table}[h]
+\centering
+\caption{Programming Languages and Their Creators}
+\begin{tabular}{|l|l|c|}
+\hline
+\textbf{Language} & \textbf{Creator} & \textbf{Year} \\
+\hline
+Python & Guido van Rossum & 1991 \\
+Java & James Gosling & 1995 \\
+C++ & Bjarne Stroustrup & 1985 \\
+JavaScript & Brendan Eich & 1995 \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Enhanced Table with Booktabs}
+
+\begin{table}[h]
+\centering
+\caption{Sales Data by Quarter}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Product} & \textbf{Q1} & \textbf{Q2} & \textbf{Q3} \\
+\midrule
+Laptops & \$125,000 & \$143,000 & \$156,000 \\
+Tablets & \$89,000 & \$95,000 & \$102,000 \\
+Smartphones & \$234,000 & \$267,000 & \$289,000 \\
+\midrule
+\textbf{Total} & \textbf{\$448,000} & \textbf{\$505,000} & \textbf{\$547,000} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Complex Table with Different Column Types}
+
+\begin{table}[h]
+\centering
+\caption{Student Grades}
+\begin{tabular}{|l|c|c|c|p{3cm}|}
+\hline
+\textbf{Student} & \textbf{Math} & \textbf{Science} & \textbf{English} & \textbf{Comments} \\
+\hline
+Alice Johnson & 95 & 88 & 92 & Excellent performance across all subjects \\
+Bob Smith & 87 & 91 & 89 & Strong analytical skills \\
+Carol Davis & 92 & 94 & 87 & Outstanding in STEM subjects \\
+David Wilson & 89 & 86 & 94 & Exceptional writing abilities \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Lists and Enumerations}
+
+LaTeX supports various types of lists:
+
+\subsection{Unordered List}
+\begin{itemize}
+    \item First item
+    \item Second item
+    \item Third item with nested items:
+    \begin{itemize}
+        \item Nested item 1
+        \item Nested item 2
+    \end{itemize}
+\end{itemize}
+
+\subsection{Ordered List}
+\begin{enumerate}
+    \item First step
+    \item Second step
+    \item Third step
+    \item Final step
+\end{enumerate}
+
+\section{Conclusion}
+
+This document has demonstrated basic LaTeX capabilities including:
+\begin{itemize}
+    \item Document structure with sections and subsections
+    \item Text formatting and mathematical expressions
+    \item Various table formats and styles
+    \item Different types of lists
+\end{itemize}
+
+LaTeX provides a powerful and flexible system for creating professional-looking documents with precise control over formatting and layout.
+
+\end{document}
